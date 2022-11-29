@@ -38,7 +38,11 @@ class Parte extends DB{
                 'JEFE' => $parte['JEFE'], 'TPILOTO' => $parte['TPILOTO'], 'NPILOTO' => $parte['NPILOTO'], 
                 'ORADIO' => $parte['ORADIO'], 'TELEFONO' => $parte['TELEFONO'], 'CSERVICIO' => $parte['CSERVICIO'], 
                 'UCGBVP' => $parte['UCGBVP'], 'UPOLI' => $parte['UPOLI'], 'MPOLI' => $parte['MPOLI'],
-                'SAMU' => $parte['SAMU'], 'MSAMU' => $parte['MSAMU'], 'SC' => $parte['SC'],
+                'SAMU' => $parte['SAMU'], 'MSAMU' => $parte['MSAMU'], 'SC' => $parte['SC'], 'MSC' => $parte['MSC'],
+                'OE' => $parte['OE'], 'LE' => $parte['LE'], 'DE' => $parte['DE'], 'NUME' => $parte['NUME'],
+                'MZE' => $parte['MZE'], 'LTE' => $parte['LTE'], 'URBE' => $parte['URBE'], 'DTTOE' => $parte['DTTOE'],
+                'TRASLDE' => $parte['TRASLDE'], 'MEDICORE' => $parte['MEDICORE'], 'ACOMP' => $parte['ACOMP'],
+                'DNI' => $parte['DNI'], 'APRENT' => $parte['APRENT'], 'PERSH' => $parte['PERSH'],
             ]);
         return $query;
     }
