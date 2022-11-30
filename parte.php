@@ -65,7 +65,7 @@ class Parte extends DB{
         return $query;
     }
 
-    function nuevaUsuario($usuario){
+    function nuevoUsuario($usuario){
         $query = $this->connect()->prepare('INSERT INTO usuarios (CODIGO, CONTRASENIA, PERMISOID, NOMBRES) VALUES (:CODIGO, :CONTRASENIA, :PERMISOID, :NOMBRES)');
         $query->execute(['CODIGO' => $usuario['CODIGO'], 'CONTRASENIA' => $usuario['CONTRASENIA'], 'PERMISOID' => $usuario['PERMISOID'], 'NOMBRES' => $usuario['NOMBRES']]);
         return $query;

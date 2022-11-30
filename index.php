@@ -3,17 +3,28 @@
 
     $api = new ApiParte();
 
-    if(isset($_GET['id'])){
-        $id = $_GET['id'];
+    if(isset($_GET['NE'])){
+        $NE = $_GET['NE'];
 
-        if(is_numeric($id)){
-            $api->getById($id);
+        if(is_numeric($NE)){
+            $api->getByIdParte($NE);
         }else{
-            $api->error('El id es incorrecto');
+            $api->error('El NE es incorrecto');
         }
-    }elseif(isset($_GET['item'])) {
-        $item = $_GET['item'];
-        $api->add($item);
+    }if(isset($_GET['CODIGO'])){
+        $CODIGO = $_GET['CODIGO'];
+
+        if(is_numeric($CODIGO)){
+            $api->getByIdUsuario($CODIGO);
+        }else{
+            $api->error('El CODIGO es incorrecto');
+        }
+    }elseif(isset($_GET['parte'])) {
+        $parte = $_GET['parte'];
+        $api->addParte($parte);
+    }elseif(isset($_GET['usuario'])) {
+        $usuario = $_GET['usuario'];
+        $api->addUsuario($usuario);
     }
     else{
         $api->getAllPartes();
