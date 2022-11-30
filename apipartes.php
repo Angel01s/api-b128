@@ -105,7 +105,6 @@ class ApiParte{
     function getByIdParte($NE){
         $pelicula = new Parte();
         $peliculas = array();
-        $peliculas["items"] = array();
 
         $res = $pelicula->obtenerParte($NE);
 
@@ -166,7 +165,7 @@ class ApiParte{
                     "OBSP"=> $row['OBSP'],
                     "OADD"=> $row['OADD'],
             );
-            array_push($peliculas["items"], $item);
+            array_push($peliculas, $item);
             $this->printJSON($peliculas);
         }else{
             $this->error('No hay elementos');
@@ -175,7 +174,6 @@ class ApiParte{
     function getByIdUsuario($CODIGO){
         $pelicula = new Parte();
         $peliculas = array();
-        $peliculas["items"] = array();
 
         $res = $pelicula->obtenerUsuario($CODIGO);
 
@@ -188,7 +186,7 @@ class ApiParte{
                 "CONTRASENIA" => $row['CONTRASENIA'],
                 "NOMBRES" => $row['NOMBRES'],
             );
-            array_push($peliculas["items"], $item);
+            array_push($peliculas, $item);
             $this->printJSON($peliculas);
         }else{
             $this->error('No hay elementos');
