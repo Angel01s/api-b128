@@ -42,7 +42,12 @@ class Parte extends DB{
                 'OE' => $parte['OE'], 'LE' => $parte['LE'], 'DE' => $parte['DE'], 'NUME' => $parte['NUME'],
                 'MZE' => $parte['MZE'], 'LTE' => $parte['LTE'], 'URBE' => $parte['URBE'], 'DTTOE' => $parte['DTTOE'],
                 'TRASLDE' => $parte['TRASLDE'], 'MEDICORE' => $parte['MEDICORE'], 'ACOMP' => $parte['ACOMP'],
-                'DNI' => $parte['DNI'], 'APRENT' => $parte['APRENT'], 'PERSH' => $parte['PERSH'],
+                'DNI' => $parte['DNI'], 'APRENT' => $parte['APRENT'], 'PERSH' => $parte['PERSH'],'PERSHM' => $parte['PERSHM'],
+                'NOMBREPERS' => $parte['NOMBREPERS'], 'EDADPERS' => $parte['EDADPERS'], 'DNIPERS' => $parte['DNIPERS'],
+                'PULSO' => $parte['PULSO'], 'RESP' => $parte['RESP'], 'PARTERIAL' => $parte['PARTERIAL'],
+                'SPO' => $parte['SPO'], 'NEUROLOGICO' => $parte['NEUROLOGICO'], 'REFLEJOC' => $parte['REFLEJOC'],
+                'SINTG' => $parte['SINTG'], 'DIAGP' => $parte['DIAGP'], 'TRATR' => $parte['TRATR'], 'MATERIALU' => $parte['MATERIALU'],
+                'OBSP' => $parte['OBSP'], 'OADD' => $parte['OADD'], 'PASISTENTE' => $parte['PASISTENTE'], 'PAPOYO' => $parte['PAPOYO']
             ]);
         return $query;
     }
